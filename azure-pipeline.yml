@@ -3,8 +3,8 @@ trigger:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'fd4efae4-5550-4a3c-b54e-47f1f2d705c5'
-  imageRepository: 'react'
+  dockerRegistryServiceConnection: 'azure-svc-conn'
+  imageRepository: 'frontend'
   containerRegistry: 'registrydemo11.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
